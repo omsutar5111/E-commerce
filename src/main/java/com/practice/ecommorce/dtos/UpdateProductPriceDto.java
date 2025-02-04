@@ -1,6 +1,6 @@
 package com.practice.ecommorce.dtos;
 
-public class updateProductPriceDto {
+public class UpdateProductPriceDto {
 	private long id;
     private double price;
 
@@ -23,7 +23,7 @@ public class updateProductPriceDto {
 
 	@Override
 	public String toString() {
-		return "updateProductPriceDto [id=" + id + ", price=" + price + "]";
+		return "UpdateProductPriceDto [id=" + id + ", price=" + price + "]";
 	}
 
 

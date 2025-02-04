@@ -21,7 +21,7 @@ import com.practice.ecommorce.Model.Product;
 import com.practice.ecommorce.Service.ProductService;
 import com.practice.ecommorce.components.AuthUtils;
 import com.practice.ecommorce.dtos.CreateProductDto;
-import com.practice.ecommorce.dtos.updateProductPriceDto;
+import com.practice.ecommorce.dtos.UpdateProductPriceDto;
 
 @RestController
 @RequestMapping("/products")
@@ -65,7 +65,7 @@ public class ProductController {
     }
 
     @PutMapping
-    public Product updatePrice(@RequestBody updateProductPriceDto requestDto) {
+    public Product updatePrice(@RequestBody UpdateProductPriceDto requestDto) {
         return productService.updateproductPrice(requestDto.getId(), requestDto.getPrice());
     }
 
