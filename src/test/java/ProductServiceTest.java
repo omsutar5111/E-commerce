@@ -8,7 +8,7 @@ import org.mockito.MockitoAnnotations;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class ProductServiceTest {
+class ProductServiceTest {
 
     @Mock
     private ProductService productService; // Mocking ProductService
@@ -19,7 +19,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void getProductById() {
+    void getProductById() {
         long productId = 1;
 
         // Create a mock product to return
